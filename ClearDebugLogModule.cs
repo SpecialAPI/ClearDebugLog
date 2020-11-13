@@ -14,6 +14,7 @@ namespace ClearDebugLog
         public override void Start()
         {
             ETGModConsole.Commands.AddUnit("clear_debug", this.ClearDebugLog);
+            ETGModConsole.Log("Clear Debug Log started successfully. Use <color=#ff0000>clear_debug</color> to clear the debug log.");
         }
 
         public void ClearDebugLog(string[] args)
